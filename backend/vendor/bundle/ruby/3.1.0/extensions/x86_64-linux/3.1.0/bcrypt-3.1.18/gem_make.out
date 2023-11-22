@@ -1,0 +1,32 @@
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/bcrypt-3.1.18/ext/mri
+/usr/bin/ruby -I /usr/local/share/ruby/site_ruby extconf.rb
+creating Makefile
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/bcrypt-3.1.18/ext/mri
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-t0t2nj sitelibdir\=./.gem.20231122-35754-t0t2nj clean
+rm -f 
+rm -fr bcrypt_ext.so false *.o  *.bak mkmf.log .*.time
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/bcrypt-3.1.18/ext/mri
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-t0t2nj sitelibdir\=./.gem.20231122-35754-t0t2nj
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -D__SKIP_GNU    -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o bcrypt_ext.o -c bcrypt_ext.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -D__SKIP_GNU    -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o crypt_blowfish.o -c crypt_blowfish.c
+gcc  -D__SKIP_GNU     -c -o x86.o x86.S
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -D__SKIP_GNU    -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o crypt_gensalt.o -c crypt_gensalt.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -D__SKIP_GNU    -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o wrapper.o -c wrapper.c
+wrapper.c:182:60: warning: ‘struct crypt_data’ declared inside parameter list will not be visible outside of this definition or declaration
+  182 | char *crypt_r(const char *key, const char *setting, struct crypt_data *data)
+      |                                                            ^~~~~~~~~~
+rm -f bcrypt_ext.so
+gcc -shared -o bcrypt_ext.so bcrypt_ext.o crypt_blowfish.o x86.o crypt_gensalt.o wrapper.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1   -m64  -lruby  -lm  -lc
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/bcrypt-3.1.18/ext/mri
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-t0t2nj sitelibdir\=./.gem.20231122-35754-t0t2nj install
+/usr/bin/mkdir -p . ./.gem.20231122-35754-t0t2nj
+exit > .sitearchdir.time
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20231122-35754-t0t2nj
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/bcrypt-3.1.18/ext/mri
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-t0t2nj sitelibdir\=./.gem.20231122-35754-t0t2nj clean
+rm -f 
+rm -fr bcrypt_ext.so false *.o  *.bak mkmf.log .*.time

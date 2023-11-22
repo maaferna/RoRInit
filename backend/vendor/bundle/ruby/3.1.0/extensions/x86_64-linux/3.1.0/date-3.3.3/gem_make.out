@@ -1,0 +1,31 @@
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/date-3.3.3/ext/date
+/usr/bin/ruby -I /usr/local/share/ruby/site_ruby extconf.rb
+checking for rb_category_warn()... yes
+checking for timezone in time.h with  -Werror... yes
+checking for altzone in time.h with  -Werror... no
+creating Makefile
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/date-3.3.3/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-ozhl8x sitelibdir\=./.gem.20231122-35754-ozhl8x clean
+rm -f 
+rm -fr date_core.so false *.o  *.bak mkmf.log .*.time
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/date-3.3.3/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-ozhl8x sitelibdir\=./.gem.20231122-35754-ozhl8x
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RB_CATEGORY_WARN -DHAVE_TIMEZONE    -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o date_core.o -c date_core.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RB_CATEGORY_WARN -DHAVE_TIMEZONE    -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o date_parse.o -c date_parse.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RB_CATEGORY_WARN -DHAVE_TIMEZONE    -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o date_strftime.o -c date_strftime.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_RB_CATEGORY_WARN -DHAVE_TIMEZONE    -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o date_strptime.o -c date_strptime.c
+rm -f date_core.so
+gcc -shared -o date_core.so date_core.o date_parse.o date_strftime.o date_strptime.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1   -m64  -lruby  -lm  -lc
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/date-3.3.3/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-ozhl8x sitelibdir\=./.gem.20231122-35754-ozhl8x install
+/usr/bin/mkdir -p . ./.gem.20231122-35754-ozhl8x
+exit > .sitearchdir.time
+/usr/bin/install -c -m 0755 date_core.so ./.gem.20231122-35754-ozhl8x
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/date-3.3.3/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-ozhl8x sitelibdir\=./.gem.20231122-35754-ozhl8x clean
+rm -f 
+rm -fr date_core.so false *.o  *.bak mkmf.log .*.time

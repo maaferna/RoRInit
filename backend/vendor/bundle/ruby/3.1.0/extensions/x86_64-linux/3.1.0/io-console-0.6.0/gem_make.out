@@ -1,0 +1,29 @@
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/io-console-0.6.0/ext/io/console
+/usr/bin/ruby -I /usr/local/share/ruby/site_ruby extconf.rb
+checking for termios.h... yes
+checking for cfmakeraw() in termios.h... yes
+checking for sys/ioctl.h... yes
+checking for HAVE_RUBY_FIBER_SCHEDULER_H... yes
+creating Makefile
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/io-console-0.6.0/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-kva5xv sitelibdir\=./.gem.20231122-35754-kva5xv clean
+rm -f 
+rm -fr console.so false *.o  *.bak mkmf.log .*.time
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/io-console-0.6.0/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-kva5xv sitelibdir\=./.gem.20231122-35754-kva5xv
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -DHAVE_TERMIOS_H -DHAVE_CFMAKERAW -DHAVE_SYS_IOCTL_H -DHAVE_RB_IO_WAIT=1 -DENABLE_IO_GETPASS=1    -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -m64 -o console.o -c console.c
+rm -f console.so
+gcc -shared -o console.so console.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1   -m64  -lruby  -lm  -lc
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/io-console-0.6.0/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-kva5xv sitelibdir\=./.gem.20231122-35754-kva5xv install
+/usr/bin/mkdir -p . ./.gem.20231122-35754-kva5xv/io
+exit > .sitearchdir.-.io.time
+/usr/bin/install -c -m 0755 console.so ./.gem.20231122-35754-kva5xv/io
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/io-console-0.6.0/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-kva5xv sitelibdir\=./.gem.20231122-35754-kva5xv clean
+rm -f 
+rm -fr console.so false *.o  *.bak mkmf.log .*.time

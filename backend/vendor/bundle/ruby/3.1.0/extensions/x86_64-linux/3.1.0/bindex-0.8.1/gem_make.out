@@ -1,0 +1,25 @@
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
+/usr/bin/ruby -I /usr/local/share/ruby/site_ruby extconf.rb
+creating Makefile
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-wm3tha sitelibdir\=./.gem.20231122-35754-wm3tha clean
+rm -f 
+rm -fr cruby.so false *.o  *.bak mkmf.log .*.time
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-wm3tha sitelibdir\=./.gem.20231122-35754-wm3tha
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I.   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -Wall -m64 -o cruby.o -c cruby.c
+rm -f cruby.so
+gcc -shared -o cruby.so cruby.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1   -m64  -lruby  -lm  -lc
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-wm3tha sitelibdir\=./.gem.20231122-35754-wm3tha install
+/usr/bin/mkdir -p . ./.gem.20231122-35754-wm3tha/skiptrace/internal
+exit > .sitearchdir.-.skiptrace.-.internal.time
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20231122-35754-wm3tha/skiptrace/internal
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-wm3tha sitelibdir\=./.gem.20231122-35754-wm3tha clean
+rm -f 
+rm -fr cruby.so false *.o  *.bak mkmf.log .*.time

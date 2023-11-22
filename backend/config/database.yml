@@ -1,0 +1,25 @@
+# config/database.yml
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV['DB_USERNAME_DEV'] %>
+  password: <%= ENV['DB_PASSWORD_DEV'] %>
+  host: localhost
+
+development:
+  <<: *default
+  database: <%= ENV['DB_NAME_DEV'] %>
+
+test:
+  <<: *default
+  database: <%= ENV['DB_NAME_TEST'] %>
+
+production:
+  <<: *default
+  database: <%= ENV['DB_NAME_PROD'] %>
+  username: <%= ENV['DB_USERNAME_PROD'] %>
+  password: <%= ENV['DB_PASSWORD_PROD'] %>
+
+

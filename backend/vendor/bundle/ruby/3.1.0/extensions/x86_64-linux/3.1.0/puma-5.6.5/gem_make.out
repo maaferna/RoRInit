@@ -1,0 +1,37 @@
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/puma-5.6.5/ext/puma_http11
+/usr/bin/ruby -I /usr/local/share/ruby/site_ruby extconf.rb
+using OpenSSL pkgconfig (openssl.pc)
+checking for openssl/bio.h... yes
+checking for DTLS_method() in openssl/ssl.h... yes
+checking for TLS_server_method() in openssl/ssl.h... yes
+checking for SSL_CTX_set_min_proto_version(NULL, 0) in openssl/ssl.h... yes
+checking for X509_STORE_up_ref()... yes
+checking for SSL_CTX_set_ecdh_auto(NULL, 0) in openssl/ssl.h... yes
+checking for SSL_CTX_set_dh_auto(NULL, 0) in openssl/ssl.h... yes
+checking for SSL_get1_peer_certificate() in openssl/ssl.h... yes
+checking for Random.bytes... yes
+creating Makefile
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/puma-5.6.5/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-qbqhtw sitelibdir\=./.gem.20231122-35754-qbqhtw clean
+rm -f 
+rm -fr puma_http11.so false *.o  *.bak mkmf.log .*.time
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/puma-5.6.5/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-qbqhtw sitelibdir\=./.gem.20231122-35754-qbqhtw
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I.  -DHAVE_OPENSSL_BIO_H -DHAVE_DTLS_METHOD -DHAVE_TLS_SERVER_METHOD -DHAVE_SSL_CTX_SET_MIN_PROTO_VERSION -DHAVE_X509_STORE_UP_REF -DHAVE_SSL_CTX_SET_ECDH_AUTO -DHAVE_SSL_CTX_SET_DH_AUTO -DHAVE_SSL_GET1_PEER_CERTIFICATE -DHAVE_RANDOM_BYTES    -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC  -m64 -o http11_parser.o -c http11_parser.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I.  -DHAVE_OPENSSL_BIO_H -DHAVE_DTLS_METHOD -DHAVE_TLS_SERVER_METHOD -DHAVE_SSL_CTX_SET_MIN_PROTO_VERSION -DHAVE_X509_STORE_UP_REF -DHAVE_SSL_CTX_SET_ECDH_AUTO -DHAVE_SSL_CTX_SET_DH_AUTO -DHAVE_SSL_GET1_PEER_CERTIFICATE -DHAVE_RANDOM_BYTES    -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC  -m64 -o mini_ssl.o -c mini_ssl.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I.  -DHAVE_OPENSSL_BIO_H -DHAVE_DTLS_METHOD -DHAVE_TLS_SERVER_METHOD -DHAVE_SSL_CTX_SET_MIN_PROTO_VERSION -DHAVE_X509_STORE_UP_REF -DHAVE_SSL_CTX_SET_ECDH_AUTO -DHAVE_SSL_CTX_SET_DH_AUTO -DHAVE_SSL_GET1_PEER_CERTIFICATE -DHAVE_RANDOM_BYTES    -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC  -m64 -o puma_http11.o -c puma_http11.c
+rm -f puma_http11.so
+gcc -shared -o puma_http11.so http11_parser.o mini_ssl.o puma_http11.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed  -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1   -m64  -lruby  -lssl -lcrypto -lm  -lc
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/puma-5.6.5/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-qbqhtw sitelibdir\=./.gem.20231122-35754-qbqhtw install
+/usr/bin/mkdir -p . ./.gem.20231122-35754-qbqhtw/puma
+exit > .sitearchdir.-.puma.time
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20231122-35754-qbqhtw/puma
+
+current directory: /home/mparraf/myprojects/JobShopManagerRoR/backend/vendor/bundle/ruby/3.1.0/gems/puma-5.6.5/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20231122-35754-qbqhtw sitelibdir\=./.gem.20231122-35754-qbqhtw clean
+rm -f 
+rm -fr puma_http11.so false *.o  *.bak mkmf.log .*.time
